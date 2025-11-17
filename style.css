@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+.cv-container {
+  max-width: 850px;
+  background-color: #ffffff;
+  margin: 20px auto;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
+}
+
+header {
+  text-align: center;
+  border-bottom: 2px solid #89c2d9;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 1.9em;
+  color: #1d3557;
+  margin-bottom: 5px;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #457b9d;
+  margin-top: 0;
+}
+
+.contact {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.contact a {
+  color: #1d3557;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 15px;
+}
+
+section h3 {
+  color: #1d3557;
+  font-size: 1.2em;
+  border-left: 4px solid #89c2d9;
+  padding-left: 8px;
+  margin-bottom: 6px;
+}
+
+section h4 {
+  color: #333;
+  font-size: 1.1em;
+  padding-left: 8px;
+  margin-bottom: 4px;
+}
+
+section p, section li {
+  font-size: 0.95em;
+  line-height: 1.5;
+  color: #444;
+}
+
+ul {
+  list-style-type: "– ";
+  padding-left: 20px;
+  margin: 5px 0;
+}
+
+/* Hover léger pour dynamisme */
+section:hover {
+  background-color: #f7f9fc;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .cv-container {
+    padding: 20px 15px;
+  }
+  header h1 {
+    font-size: 1.6em;
+  }
+  header h2 {
+    font-size: 0.95em;
+  }
+  section h3 {
+    font-size: 1.1em;
+  }
+  section h4 {
+    font-size: 0.95em;
+  }
+  section p, section li {
+    font-size: 0.9em;
+  }
+}
