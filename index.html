@@ -9,19 +9,28 @@
 </head>
 
 <body>
-  <header class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>EL FERZAOUI Najm Echorouk</h1>
-      <h2>Génie Mécatronique | Bac+5 | Stage PFE</h2>
-      <p class="hero-buttons">
-        <a href="#projets" class="btn">Projets</a>
-        <a href="#contact" class="btn-outline">Me contacter</a>
-      </p>
-    </div>
-  </header>
 
-  <main class="portfolio-container">
+  <aside class="sidebar">
+    <div class="profile">
+      <h1>EL FERZAOUI<br>Najm Echorouk</h1>
+      <h2>Génie Mécatronique | Bac+5 | Stage PFE</h2>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#langues">Langues</a></li>
+        <li><a href="#para">Parascolaire</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="content">
 
     <section id="profil">
       <h3>Profil</h3>
@@ -53,29 +62,29 @@
     <section id="projets">
       <h3>Projets académiques</h3>
 
-      <div class="project-card">
+      <div class="card">
         <h4><strong>Projet Smart Home </strong></h4>
-        <a href="https://najmechorouk.github.io/SMARTE-HOUSE" target="_blank" class="project-link">Lien GitHub</a>
+        <a href="https://najmechorouk.github.io/SMARTE-HOUSE" target="_blank" class="link">GitHub</a>
         <ul>
           <li>Concevoir et implémenter en équipe un système domotique <strong>embarqué (Arduino)</strong> intégrant l’automatisation de l’éclairage, la gestion du garage, le suivi solaire et la sécurité incendie.</li>
         </ul>
       </div>
 
-      <div class="project-card">
+      <div class="card">
         <h4><strong>Suspension automobile et Commandes </strong></h4>
         <ul>
           <li><strong>Concevoir</strong>, <strong>modéliser</strong> et <strong>commander</strong> les suspensions passive sur <strong>MATLAB/Simulink</strong>, semi-active et active d’un quart de véhicule, réduisant les vibrations de <strong>91,9 %</strong>, le temps d’amortissement de <strong>85,1 %</strong> et augmentant la vitesse de réponse d’environ <strong>6,7 fois</strong>.</li>
         </ul>
       </div>
 
-      <div class="project-card">
+      <div class="card">
         <h4><strong>Système ABS – Cycle en V </strong></h4>
         <ul>
           <li>Modéliser et développer un système ABS sous Simulink selon le <strong>cycle en V</strong> et <strong>coder en C</strong> l’implémentation du modèle à partir du design réalisé.</li>
         </ul>
       </div>
 
-      <div class="project-card">
+      <div class="card">
         <h4><strong>Programmation et usinage CNC – Génération et simulation du G-code</strong></h4>
         <ul>
           <li>Concevoir une pièce mécanique sur <strong>SolidWorks</strong> selon les spécifications techniques et <strong>programmer</strong> la fraiseuse en <strong>G-code</strong> pour usinage après validation par simulation.</li>
@@ -112,7 +121,7 @@
       </ul>
     </section>
 
-    <section>
+    <section id="langues">
       <h3>Langues</h3>
       <ul>
         <li>Français : B2</li>
@@ -121,7 +130,7 @@
       </ul>
     </section>
 
-    <section>
+    <section id="para">
       <h3>Activités parascolaires</h3>
       <ul>
         <li><strong>Comité d’organisation – Robotica Biomédicale (ENSA Tétouan)</strong> : Coordination et accompagnement des sponsors.</li>
@@ -134,7 +143,7 @@
       <p class="contact-info">
         <i class="ri-map-pin-line"></i> Tétouan, Maroc<br>
         <i class="ri-phone-line"></i> 0701964424<br>
-        <i class="ri-mail-line"></i> 
+        <i class="ri-mail-line"></i>
         <a href="mailto:elferzaoui.najmechorouk@gmail.com">elferzaoui.najmechorouk@gmail.com</a><br>
         <i class="ri-linkedin-box-fill"></i>
         <a href="https://linkedin.com/in/najmechoroukelferzaoui" target="_blank">LinkedIn</a><br>
@@ -144,5 +153,6 @@
     </section>
 
   </main>
+
 </body>
 </html>
