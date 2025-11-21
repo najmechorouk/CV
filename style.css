@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background: #f4f6fa;
+  color: #1a1a1a;
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(135deg, #0f1c2e, #16335f);
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+.hero-links {
+  margin-top: 25px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+
+.hero-links a {
+  color: white;
+  font-size: 1.6rem;
+  transition: 0.3s;
+}
+
+.hero-links a:hover {
+  opacity: 0.7;
+}
+
+.hero-contact {
+  margin-top: 25px;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+}
+
+/* SECTIONS */
+.section {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  border: 1px solid #d8dde5;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  color: #16335f;
+  margin-bottom: 20px;
+  border-left: 4px solid #89a6d1;
+  padding-left: 12px;
+}
+
+/* PROJECT CARDS */
+.project-card {
+  background: #f9fbfe;
+  border-left: 4px solid #1a3c6e;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 25px 0;
+}
+
+
+.project-card a {
+  color: #1a3c6e;
+  font-weight: 600;
+}
+
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS */
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .section {
+    padding: 28px;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+}
