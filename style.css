@@ -53,8 +53,10 @@ header h2 {
 }
 
 section {
-  margin-bottom: 15px;
+  margin-bottom: 30px; /* espace entre sections */
+  padding-bottom: 10px;
 }
+
 
 section h3 {
   color: #1d3557;
@@ -111,3 +113,4 @@ section:hover {
     font-size: 0.9em;
   }
 }
+
