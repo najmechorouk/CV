@@ -1,0 +1,286 @@
+/* =========================================================
+   RESET — net, sans compromis
+========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   DESIGN TOKENS — BLACK & GOLD maîtrisé
+========================================================= */
+:root {
+    --bg: #111111;
+    --surface: #181818;
+    --surface-soft: #1f1f1f;
+    --text: #f2f2f2;
+    --muted: #b0b0b0;
+    --gold: #c9a24d;          /* or mat, pas bling */
+    --gold-soft: #2a2416;
+    --border: #2a2a2a;
+}
+
+/* LIGHT MODE — ivoire & or */
+body:not(.dark) {
+    --bg: #f7f5f1;
+    --surface: #ffffff;
+    --surface-soft: #f1eee8;
+    --text: #1a1a1a;
+    --muted: #5f5f5f;
+    --gold: #b08a2e;
+    --gold-soft: #f3ecd9;
+    --border: #ded9cc;
+}
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.85;
+    display: flex;
+    letter-spacing: 0.25px;
+}
+
+/* =========================================================
+   THEME TOGGLE — bijou discret
+========================================================= */
+#theme-toggle {
+    position: fixed;
+    top: 22px;
+    right: 26px;
+    background: var(--surface);
+    color: var(--gold);
+    border: 1px solid var(--border);
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.25s ease;
+    z-index: 100;
+}
+
+#theme-toggle:hover {
+    background: var(--gold);
+    color: #000;
+}
+
+/* =========================================================
+   SIDEBAR — prestige silencieux
+========================================================= */
+.sidebar {
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(
+        to bottom,
+        var(--surface),
+        var(--surface-soft)
+    );
+    border-right: 1px solid var(--border);
+    padding: 52px 32px;
+    overflow-y: auto;
+}
+
+.sidebar .name {
+    font-size: 1.9rem;
+    font-weight: bold;
+    line-height: 1.25;
+    color: var(--gold);
+}
+
+.subtitle {
+    margin-top: 6px;
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+/* Social */
+.social-links {
+    margin-top: 28px;
+    display: flex;
+    gap: 16px;
+}
+
+.social-links a {
+    font-size: 1.35rem;
+    color: var(--gold);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
+
+/* Contact */
+.contact-info {
+    margin-top: 36px;
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+.contact-info p {
+    margin-bottom: 6px;
+}
+
+/* Navigation */
+.nav {
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 0.95rem;
+    padding-left: 22px;
+    position: relative;
+    transition: color 0.25s ease;
+}
+
+.nav a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 10px;
+    height: 1px;
+    background: var(--gold);
+    transform: translateY(-50%);
+    opacity: 0.4;
+}
+
+.nav a:hover {
+    color: var(--gold);
+}
+
+.nav a:hover::before {
+    opacity: 1;
+}
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+.content {
+    margin-left: 320px;
+    padding: 78px 70px;
+    width: calc(100% - 320px);
+}
+
+/* =========================================================
+   SECTIONS — galerie d’ingénierie
+========================================================= */
+.section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 52px 50px;
+    margin-bottom: 64px;
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    color: var(--gold);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 56px;
+    height: 2px;
+    background: var(--gold);
+}
+
+/* =========================================================
+   CARDS — précision, pas décor
+========================================================= */
+.card {
+    background: var(--gold-soft);
+    border-left: 4px solid var(--gold);
+    padding: 24px 30px;
+    border-radius: 6px;
+    margin-bottom: 26px;
+}
+
+body.dark .card {
+    background: #191610;
+}
+
+.card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+/* Links */
+.card a {
+    color: var(--gold);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul {
+    margin-left: 28px;
+    margin-top: 16px;
+}
+
+ul li {
+    margin-bottom: 6px;
+}
+
+/* =========================================================
+   RESPONSIVE — luxe aussi sur mobile
+========================================================= */
+@media (max-width: 1000px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 42px 28px;
+    }
+}
+
+@media (max-width: 600px) {
+    #theme-toggle {
+        top: 14px;
+        right: 14px;
+    }
+
+    .sidebar {
+        padding: 36px 24px;
+    }
+
+    .section {
+        padding: 32px 26px;
+    }
+}
