@@ -173,3 +173,21 @@ ul li {
         gap: 18px;
     }
 }
+/* ===== FIX MOBILE CONTENT DISAPPEARING ===== */
+@media (max-width: 999px) {
+    body {
+        display: block;
+    }
+
+    .content {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+}
+
